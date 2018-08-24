@@ -1,7 +1,8 @@
-#[cfg(test)]
-mod tests {
-    #[test]
-    fn it_works() {
-        assert_eq!(2 + 2, 4);
-    }
-}
+#![allow(non_upper_case_globals)]
+
+extern crate av_data as data;
+extern crate aom_sys as ffi;
+
+pub mod common;
+pub mod encoder;
+pub mod decoder;
